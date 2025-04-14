@@ -10,7 +10,8 @@ import Link from "next/link"
 import { Execution } from "@/types"
 
 
-
+/// This component displays a list of recent executions with their status, duration, and a link to view more details.
+/// It uses the ScrollArea component to make the list scrollable if it exceeds a certain height.
 export function RecentExecutions(data: { executions: Execution[] }) {
   return (
     <ScrollArea className="h-[350px]">
